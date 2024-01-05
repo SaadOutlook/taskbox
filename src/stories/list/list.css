@@ -1,0 +1,25 @@
+.List{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: fit-content;
+    border:1px solid lightblue;
+    padding-left:0;
+}
+
+.ListItem{
+    display: flex;
+    align-items: center;
+    gap:11px;
+    font-family: var(--font);
+    font-size:13px;
+    color: var(--neutral-11);
+    padding: 3px 7px 6px 7px;
+    min-width: 219px;
+  
+}
+
+.ListItem:hover{
+    background-color: var(--blue-2);
+}

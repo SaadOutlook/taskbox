@@ -1,0 +1,21 @@
+.TopLevelCont{
+    width:fit-content;
+}
+
+.MidLevelCont{
+    width:fit-content;
+    margin-left: 20px;
+}
+
+.LowLevelCont{
+    width:fit-content;
+    margin-left: 40px;
+}
+
+.hideC{
+    display: none;
+}
+
+.openChev{
+    transform: rotate(90deg);
+}

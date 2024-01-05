@@ -1,0 +1,65 @@
+.WizardTabs {
+    display: flex;
+
+    align-items: flex-end;
+    gap: 1px;
+
+    border-bottom: 1px solid var(--neutral-5);
+}
+
+.WizardTabsItem {
+    display: flex;
+    height: 19px;
+    padding: 0px 6px 2px 5px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border: 1px solid var(--neutral-5);
+    background: var(--neutral-2);
+
+    font-family: var(--font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.WizardTabsItem.Active {
+    height: 21px;
+    /* padding: 1px 8px 5px 8px; */
+    background: var(--surface-1);
+}
+
+
+.PanelTabs {
+    display: inline-flex;
+    align-items: flex-start;
+    background: var(--surface-1);
+}
+
+.PanelTabsItem {
+    display: inline-flex;
+    max-height: 33px;
+    padding: 8px 19px 9px 6px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    background: var(--surface-3);
+
+    font-family: var(--font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.PanelTabsItem.Active {
+    background: var(--blue-6);
+    color: var(--surface-1);
+}
+
+.PanelTabsItem:hover, .WizardTabsItem:hover{
+    cursor: pointer;
+}

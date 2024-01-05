@@ -1,0 +1,71 @@
+.CompactGrid{
+
+}
+
+.GridCell:nth-child(even){
+    background-color:var(--neutral-1);
+}
+
+.CompactGridHeader{
+    display: flex;
+    font-size: 12px;
+  font-family: var(--font);
+  line-height:12px;
+  text-align:left;
+}
+
+.GridHeader{
+    display: flex;
+    font-family: var(--font);
+font-size: 17px;
+line-height:17px;
+font-style: normal;
+font-weight: 600;
+  text-align:left;
+  /* border-bottom: 3px solid var(--Colors-Neutral-6, #D3D3D3); */
+  color:#6A6A6A;
+}
+
+.GridHeaderItem{
+    border: 1px solid var(--surface-2);
+    border-bottom: 3px solid var(--neutral-6);
+    padding: 3px 8px 3px 3px;
+    display:flex;
+    align-items:center;
+    gap:7px;
+}
+
+.GridCell{
+    display: flex;
+    width: fit-content;
+    font-family: var(--font);
+}
+
+.GridCellItem{
+    padding: 6px 8px 6px 14px;
+    border: 1px solid var(--surface-2);
+    text-align:left;
+}
+
+.CompactGridHeaderItem{
+    
+    background-color:var(--surface-1);
+    outline:1px solid var(--blue-neutral-2);
+    padding: 6px 8px;
+    overflow: hidden;
+}
+
+.CompactGridCell{
+    display: flex;
+    font-size: 12px;
+  font-family: var(--font);
+  line-height:12px;
+  text-align:left;
+}
+
+.CompactGridCellItem{
+    background-color:var(--surface-1);
+    outline:1px solid var(--blue-neutral-2);
+    overflow: hidden;
+    padding: 8px 12px 6px 4px;
+}

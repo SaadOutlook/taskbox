@@ -1,0 +1,110 @@
+
+.toolbarButton{
+  height: 20px;
+  font-size: 12px;
+  font-family: var(--font);
+  color:var(--neutral-10);
+  padding-left: 8px;
+  padding-right: 7px;
+  padding-top: 1px;
+  padding-bottom: 7px;
+  background: none;
+  border: none;
+  display: flex;
+  /* align-items: center; */
+}
+
+.toolbarButtonCompact{
+  height: 20px;
+  font-size: 12px;
+  font-family: var(--font);
+  color:var(--neutral-10);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.toolbarBtnHover:hover{
+  background-color: var(--blue-2);
+  /* border: 1px solid var(--blue-neutral-2); */
+  outline: 1px solid var(--blue-neutral-2)
+}
+
+
+
+.toolbarButtontoggle{
+  background-color: var(--surface-2) !important;
+  border: 1px solid var(--blue-neutral-2) !important;
+  border-bottom: none !important;
+}
+
+.toolbarbtnsplit{
+  margin-left: 2px;
+}
+
+.toolbarIconBtn{
+  width:30px;
+  height: 30px;
+ 
+  
+  font-size: 12px;
+  font-family: var(--font);
+  color:var(--neutral-10);
+
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbarIconBtnSplit{
+  font-size: 12px;
+  font-family: var(--font);
+  color:var(--neutral-10);
+  width: 11px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.toolbarIconBtnSplitContainer{
+  display: flex;
+  width: fit-content;
+}
+
+.toolbarBtnHoverSplit:hover{
+  background-color: var(--blue-2);
+}
+
+.toolbarBtnHoverSplit:hover>button{
+  /* border: 1px solid var(--blue-neutral-2); */
+  outline: 1px solid var(--blue-neutral-2);
+}
+
+.dialogbtn{
+  
+  font-size: 12px;
+  font-family: var(--font);
+  color:var(--neutral-10);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 1px;
+  background: var(--surface-2);
+  border: 1px solid var(--blue-neutral-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialogbtn:hover{
+  background-color: var(--blue-neutral-1);
+}

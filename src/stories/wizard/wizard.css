@@ -1,0 +1,62 @@
+.Wizard {
+    display: flex;
+    width: 830px;
+    height: 548px;
+    padding-left: 1px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    border: 1px solid var(--blue-neutral-3);
+    /* elev-4 */
+    box-shadow: 5px 6px 13px 0px #D9D9D9;
+}
+
+.WizardToolbar {
+    display: flex;
+    height: 30px;
+    padding: 4px 14px 4px 6px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    background: var(--surface-1);
+
+    font-family: var(--font);
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.WizardNavigator {
+    display: flex;
+    max-height: 38px;
+    padding: 3px 50px 3px 5px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    background: var(--surface-2);
+}
+
+.WizardBody {
+    flex: 1 0 0;
+    align-self: stretch;
+    padding: 30px;
+    background: var(--surface-1);
+}
+
+.WizardActions {
+    display: flex;
+    padding-left: 9px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: -1px;
+    align-self: stretch;
+}
+
+.WizardActions .dialogbtn{
+    width: 67px;
+}

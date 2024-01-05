@@ -1,0 +1,194 @@
+.TextField{
+    border-radius:0px;
+    outline:none;
+    border:1px solid var(--neutral-3);
+    background-color: var(--surface-1);
+    font-size:12px;
+}
+
+.TextField:focus{
+    outline: 1px solid var(--blue-5);
+}
+
+.disabled input{
+    background-color: var(--neutral-4);
+    color: var(--neutral-8);
+    
+}
+
+.disabled select{
+    background-color: var(--neutral-4);
+    color: var(--neutral-8);
+    background-image: url("data:image/svg+xml;utf8,<svg width='17' height='19' viewBox='0 0 17 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.5 7.5L8.5 10.5L11.5 7.5' stroke='rgba(171, 171, 171, 1)'/></svg>") ;
+}
+
+.DropdownField{
+    border-radius:0px;
+    outline:none;
+    border:1px solid var(--neutral-3);
+    background-color: var(--surface-1);
+    font-size:12px;
+    background-image: url("data:image/svg+xml;utf8,<svg width='17' height='19' viewBox='0 0 17 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.5 7.5L8.5 10.5L11.5 7.5' stroke='black'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  /* background-position-y: -2px; */
+  appearance:none;
+  width: 152px;
+  height:21px;
+}
+
+.DropdownField:focus{
+    background-image: url('data:image/svg+xml;utf8,<svg width="17" height="19" viewBox="0 0 17 19" fill="none" style="background-color:rgba(205, 232, 255, 1)" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 7.5L8.5 10.5L11.5 7.5" stroke="black"/></svg>');
+}
+
+
+.NumericField{
+    border-radius:0px;
+    outline:none;
+    border:1px solid var(--neutral-3);
+    background-color: var(--surface-1);
+    font-size:12px;
+    appearance:none;
+    height:21px;
+    padding-top:0;
+    padding-bottom:0;
+}
+
+.NumericField:focus::-webkit-inner-spin-button,.NumericField:hover::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+   
+}
+
+.NumericContainer .decspinner{
+    background-color:unset;
+    background-image: url("data:image/svg+xml;utf8,<svg width='17' height='19' viewBox='0 0 17 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.5 7.5L8.5 10.5L11.5 7.5' stroke='black'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -4px;
+  width: 16px;
+  height: 10px;
+    border: none;
+    position: absolute;
+    right: 1px;
+    bottom:1px;
+}
+
+.NumericContainer .incspinner{
+    background-color:unset;
+    background-image: url("data:image/svg+xml;utf8,<svg width='17' height='19' viewBox='0 0 17 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.5 7.5L8.5 10.5L11.5 7.5' stroke='black'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x:center;
+  background-position-y: -4px;
+  width: 16px;
+  height: 10px;
+    border: none;
+    position: absolute;
+    right: 1px;
+    top:2px;
+    transform:rotate(180deg);
+}
+
+.disabled .decspinner, .disabled .incspinner{
+    background-image: url("data:image/svg+xml;utf8,<svg width='17' height='19' viewBox='0 0 17 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M5.5 7.5L8.5 10.5L11.5 7.5' stroke='rgba(171, 171, 171, 1)'/></svg>");
+
+}
+
+.NumericContainer .decspinner:hover,  .NumericContainer .incspinner:hover{
+    background-color: var(--blue-4)
+}
+
+.NumericContainer{
+    display:inline-block;
+    position: relative;
+}
+
+.Label{
+    font-family:var(--font);
+    color:var(--neutral-9);
+    font-size:12px;
+    margin-right:15px;
+}
+
+.Field{
+    text-align:left;
+}
+
+.CheckboxField{
+    display: flex;
+    align-items: center;
+}
+
+.CheckboxField label{
+    order: 2;
+}
+
+.CheckboxField input{
+    margin-right: 6px;
+   
+}
+
+input[type="checkbox" i]{
+    appearance: none;
+    border-radius: 0;
+    border: 1px solid black;
+    background: white;
+    width: 13px;
+    height: 13px;
+    margin-left:0;
+}
+
+.disabled input[type="checkbox" i]{
+    appearance: none;
+    border-radius: 0;
+    border:none;
+    background: var(--neutral-4);
+    width: 13px;
+    height: 13px;
+    margin-left:0;
+}
+
+
+
+input[type="checkbox" i]:checked{
+    background-image: url("data:image/svg+xml;utf8,<svg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M9.22213 1.17572L3.36926 7.56068L0.5 4.69142L1.20711 3.98431L3.33785 6.11505L8.48498 0.5L9.22213 1.17572Z' fill='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.disabled input[type="checkbox" i]:checked{
+    background-image: url("data:image/svg+xml;utf8,<svg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M9.22213 1.17572L3.36926 7.56068L0.5 4.69142L1.20711 3.98431L3.33785 6.11505L8.48498 0.5L9.22213 1.17572Z' fill='rgba(171, 171, 171, 1)'/></svg>");
+   
+}
+
+input[type="radio" i]{
+    appearance: none;
+    border-radius: 0;
+    border: 1px solid black;
+    background: white;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-left:0;
+}
+
+.disabled input[type="radio" i]{
+    appearance: none;
+    border-radius: 0;
+    border: 1px solid var(--neutral-4);
+    background: var(--neutral-4);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-left:0;
+}
+
+input[type="radio" i]:checked{
+    background-image: url("data:image/svg+xml;utf8,<svg width='7' height='7' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M7 3.5C7 5.433 5.433 7 3.5 7C1.567 7 0 5.433 0 3.5C0 1.567 1.567 0 3.5 0C5.433 0 7 1.567 7 3.5Z' fill='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.disabled input[type="radio" i]:checked{
+    background-image: url("data:image/svg+xml;utf8,<svg width='7' height='7' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M7 3.5C7 5.433 5.433 7 3.5 7C1.567 7 0 5.433 0 3.5C0 1.567 1.567 0 3.5 0C5.433 0 7 1.567 7 3.5Z' fill='rgba(171, 171, 171, 1)'/></svg>");
+   
+}

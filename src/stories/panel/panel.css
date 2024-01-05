@@ -1,0 +1,188 @@
+.PanelHeader {
+    height: 33px;
+    display: flex;
+    width: 238px;
+    height: 33px;
+    overflow: hidden;
+    padding: 0px 4px 0px 4px;
+    background: var(--surface-3);
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+    color: var(--neutral-11);
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.PanelHeaderIcon {
+    width: 14px;
+    height: 14px;
+}
+
+#icon_option {
+    background-image: url('data:image/svg+xml;utf8,<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.30001L0 0.700012H6L4.5 2.50001L3 4.30001Z" fill="black"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#icon_pin {
+    background-image: url('data:image/svg+xml;utf8,<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 1H4.5V5H3.5H2.5V1ZM5.5 6H4.5V9H3.5V6H2.5H1.5H0.5V5H1.5V1V0H2.5H5.5H6.5V1V5H7.5V6H6.5H5.5Z" fill="black"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#icon_close {
+    background-image: url('data:image/svg+xml;utf8,<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 4L4.5 1.5L7 4L9.5 1.5L12 4L9.5 6.5L12 9L9.5 11.5L7 9L4.5 11.5L2 9L4.5 6.5L2 4Z" fill="black"/><path d="M4.5 1.5L5.20711 0.792893L4.5 0.0857865L3.79289 0.792893L4.5 1.5ZM2 4L1.29289 3.29289L0.585786 4L1.29289 4.70711L2 4ZM7 4L6.29289 4.70711L7 5.41421L7.70711 4.70711L7 4ZM9.5 1.5L10.2071 0.792893L9.5 0.0857865L8.79289 0.792893L9.5 1.5ZM12 4L12.7071 4.70711L13.4142 4L12.7071 3.29289L12 4ZM9.5 6.5L8.79289 5.79289L8.08579 6.5L8.79289 7.20711L9.5 6.5ZM12 9L12.7071 9.70711L13.4142 9L12.7071 8.29289L12 9ZM9.5 11.5L8.79289 12.2071L9.5 12.9142L10.2071 12.2071L9.5 11.5ZM7 9L7.70711 8.29289L7 7.58579L6.29289 8.29289L7 9ZM4.5 11.5L3.79289 12.2071L4.5 12.9142L5.20711 12.2071L4.5 11.5ZM2 9L1.29289 8.29289L0.585786 9L1.29289 9.70711L2 9ZM4.5 6.5L5.20711 7.20711L5.91421 6.5L5.20711 5.79289L4.5 6.5ZM3.79289 0.792893L1.29289 3.29289L2.70711 4.70711L5.20711 2.20711L3.79289 0.792893ZM7.70711 3.29289L5.20711 0.792893L3.79289 2.20711L6.29289 4.70711L7.70711 3.29289ZM7.70711 4.70711L10.2071 2.20711L8.79289 0.792893L6.29289 3.29289L7.70711 4.70711ZM8.79289 2.20711L11.2929 4.70711L12.7071 3.29289L10.2071 0.792893L8.79289 2.20711ZM11.2929 3.29289L8.79289 5.79289L10.2071 7.20711L12.7071 4.70711L11.2929 3.29289ZM12.7071 8.29289L10.2071 5.79289L8.79289 7.20711L11.2929 9.70711L12.7071 8.29289ZM10.2071 12.2071L12.7071 9.70711L11.2929 8.29289L8.79289 10.7929L10.2071 12.2071ZM6.29289 9.70711L8.79289 12.2071L10.2071 10.7929L7.70711 8.29289L6.29289 9.70711ZM6.29289 8.29289L3.79289 10.7929L5.20711 12.2071L7.70711 9.70711L6.29289 8.29289ZM5.20711 10.7929L2.70711 8.29289L1.29289 9.70711L3.79289 12.2071L5.20711 10.7929ZM2.70711 9.70711L5.20711 7.20711L3.79289 5.79289L1.29289 8.29289L2.70711 9.70711ZM1.29289 4.70711L3.79289 7.20711L5.20711 5.79289L2.70711 3.29289L1.29289 4.70711Z" fill="rgba(225, 234, 240, 1)"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.PanelHeader.active {
+    background: var(--blue-6);
+    color: white
+}
+
+.PanelHeader.active #icon_option {
+    background-image: url('data:image/svg+xml;utf8,<svg width="6" height="5" viewBox="0 0 6 5" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4.30001L0 0.700012H6L4.5 2.50001L3 4.30001Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.PanelHeader.active #icon_pin {
+    background-image: url('data:image/svg+xml;utf8,<svg width="8" height="9" viewBox="0 0 8 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 1H4.5V5H3.5H2.5V1ZM5.5 6H4.5V9H3.5V6H2.5H1.5H0.5V5H1.5V1V0H2.5H5.5H6.5V1V5H7.5V6H6.5H5.5Z" fill="white"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.PanelHeader.active #icon_close {
+    background-image: url('data:image/svg+xml;utf8,<svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 4L4.5 1.5L7 4L9.5 1.5L12 4L9.5 6.5L12 9L9.5 11.5L7 9L4.5 11.5L2 9L4.5 6.5L2 4Z" fill="white"/><path d="M4.5 1.5L5.20711 0.792893L4.5 0.0857865L3.79289 0.792893L4.5 1.5ZM2 4L1.29289 3.29289L0.585786 4L1.29289 4.70711L2 4ZM7 4L6.29289 4.70711L7 5.41421L7.70711 4.70711L7 4ZM9.5 1.5L10.2071 0.792893L9.5 0.0857865L8.79289 0.792893L9.5 1.5ZM12 4L12.7071 4.70711L13.4142 4L12.7071 3.29289L12 4ZM9.5 6.5L8.79289 5.79289L8.08579 6.5L8.79289 7.20711L9.5 6.5ZM12 9L12.7071 9.70711L13.4142 9L12.7071 8.29289L12 9ZM9.5 11.5L8.79289 12.2071L9.5 12.9142L10.2071 12.2071L9.5 11.5ZM7 9L7.70711 8.29289L7 7.58579L6.29289 8.29289L7 9ZM4.5 11.5L3.79289 12.2071L4.5 12.9142L5.20711 12.2071L4.5 11.5ZM2 9L1.29289 8.29289L0.585786 9L1.29289 9.70711L2 9ZM4.5 6.5L5.20711 7.20711L5.91421 6.5L5.20711 5.79289L4.5 6.5ZM3.79289 0.792893L1.29289 3.29289L2.70711 4.70711L5.20711 2.20711L3.79289 0.792893ZM7.70711 3.29289L5.20711 0.792893L3.79289 2.20711L6.29289 4.70711L7.70711 3.29289ZM7.70711 4.70711L10.2071 2.20711L8.79289 0.792893L6.29289 3.29289L7.70711 4.70711ZM8.79289 2.20711L11.2929 4.70711L12.7071 3.29289L10.2071 0.792893L8.79289 2.20711ZM11.2929 3.29289L8.79289 5.79289L10.2071 7.20711L12.7071 4.70711L11.2929 3.29289ZM12.7071 8.29289L10.2071 5.79289L8.79289 7.20711L11.2929 9.70711L12.7071 8.29289ZM10.2071 12.2071L12.7071 9.70711L11.2929 8.29289L8.79289 10.7929L10.2071 12.2071ZM6.29289 9.70711L8.79289 12.2071L10.2071 10.7929L7.70711 8.29289L6.29289 9.70711ZM6.29289 8.29289L3.79289 10.7929L5.20711 12.2071L7.70711 9.70711L6.29289 8.29289ZM5.20711 10.7929L2.70711 8.29289L1.29289 9.70711L3.79289 12.2071L5.20711 10.7929ZM2.70711 9.70711L5.20711 7.20711L3.79289 5.79289L1.29289 8.29289L2.70711 9.70711ZM1.29289 4.70711L3.79289 7.20711L5.20711 5.79289L2.70711 3.29289L1.29289 4.70711Z" fill="rgba(77, 130, 184, 1)"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.PanelActions {
+    display: flex;
+    align-items: center;
+}
+
+.PanelHeader.active .ActivePattern {
+    background: url('data:image/svg+xml;utf8,<svg width="4" height="6" viewBox="0 0 4 6" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.772644" y="4.75412" width="1" height="1" fill="white"/><rect x="2.92017" y="2.60658" width="1" height="1" fill="white"/><rect x="0.772644" y="0.498154" width="1" height="1" fill="white"/></svg>');
+    background-size: 5px;
+    background-repeat: repeat-x;
+
+    flex: 1 0 0;
+    height: 6.407px;
+}
+
+.PanelHeaderTitle {
+    margin-right: 5px;
+    position: relative;
+    top: -2px;
+}
+
+.PanelBody {
+    display: flex;
+    width: 244px;
+    height: 428px;
+    overflow: hidden;
+    border: 1px solid var(--blue-neutral-2);
+    border-top-width: 0px;
+    background: var(--surface-1);
+
+}
+
+.PanelBottomMenu {
+    display: flex;
+    padding: 0px 6px;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    margin-top: 5px;
+}
+
+.PanelLeftMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 6px;
+    padding-left: 0;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    margin-top: 5px;
+}
+
+.PanelRightMenu {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 6px;
+    padding-right: 0;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+    margin-top: 5px;
+}
+
+.PanelBottomMenuItem {
+    display: flex;
+
+    align-items: flex-start;
+
+    background: var(--surface-3);
+    border-bottom: 6px solid var(--neutral-8);
+
+    font-family: Segoe UI;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.PanelLeftMenuItem {
+    display: flex;
+    
+    align-items: flex-start;
+    writing-mode: tb;
+
+    background: var(--surface-3);
+    border-left: 6px solid var(--neutral-8);
+
+    font-family: Segoe UI;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.PanelRightMenuItem {
+    display: flex;
+    
+    align-items: flex-start;
+    writing-mode: tb;
+
+    background: var(--surface-3);
+    border-right: 6px solid var(--neutral-8);
+
+    font-family: Segoe UI;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.DockPanel {
+    background: var(--surface-2);
+    width: fit-content;
+    padding-top:6px;
+}
+
+.PanelBottomMenuItem:hover, .PanelLeftMenuItem:hover, .PanelRightMenuItem:hover{
+    cursor:pointer;
+    background: #E1EAF0;
+    color:#4D82B8;
+    border-color: #4D82B8;
+}

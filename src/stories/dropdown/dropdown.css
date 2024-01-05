@@ -1,0 +1,110 @@
+.ToolbarDropdownItem{
+    display: flex;
+    min-width: 186px;
+    height: fit-content;
+    justify-content: space-between;
+    gap: 7px;
+    background-color: var(--surface-2);
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.ToolbarDropdownItem p{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: var(--font);
+    line-height: 24px;
+    text-wrap: nowrap;
+}
+
+.ToolbarDropdownItemActive{
+    background-color: var(--blue-2);
+    /* border: 1px solid var(--blue-neutral-2) */
+}
+
+
+
+.ToolbarDropdownItem span{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.ToolbarDropdownItem div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.endGroup {
+    border-bottom: 1px solid var(--blue-neutral-2);
+}
+
+.ToolbarMenuItem{
+    display: flex;
+    position: relative;
+}
+
+.ToolbarSubMenu{
+    display: none;
+    position: absolute;
+    /* left:188px; */
+    box-shadow: 2px 2px 3px 0px #757E87;
+    border:1px solid var(--blue-neutral-2);
+    pointer-events: none;
+    min-width: 211px;
+}
+
+.ToolbarSubMenuShow{
+    display: block;
+}
+
+.ToolbarSubMenu .ToolbarDropdownItem {
+    min-height: 26px;
+    padding-right: 14px;
+    width: auto;
+    
+}
+
+.mainToolbarDropdownContainer{
+    border:1px solid var(--blue-neutral-2);
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    box-shadow: 2px 2px 3px 0px #757E87;
+}
+
+.endGroupItem{
+   border-bottom:  1px Solid #D5DADF;
+}
+
+.DropdownInputItem{
+    font-size: 11px;
+    font-family: var(--font);
+    font-weight: 500;
+    color:var(--neutral-11);
+    padding-left: 2px;
+    display: flex;
+}
+
+.DropdownInputItemActive{
+    background-color: var(--blue-5);
+    color:var(--surface-1);
+}
+
+.DropdownInput{
+    background-color: var(--surface-1);
+    border:1px solid var(--blue-5);
+    box-shadow: 4px 4px 2px -2px #8E8E8E;
+    min-width: 164px;
+}
+
+[id*="submenu"] span>p{
+    margin:unset !important;
+}
+
+[id*="submenu"] p{
+    margin:unset !important;
+}
